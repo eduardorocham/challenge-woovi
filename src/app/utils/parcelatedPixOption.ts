@@ -15,7 +15,8 @@ export const parcelatedPixOptions = [
         id: 3,
         parceledCount: 4,
         value: "R$ 7.725,00",
-        total: "Total: 30.900,00"
+        total: "Total: 30.900,00",
+        badge: `<strong className="mx-1">-3% de juros:</strong> Melhor opção de parcelamento`
     },
     {
         id: 4,

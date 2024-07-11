@@ -3,4 +3,6 @@ export interface Option {
     parceledCount: number,
     value: string
     total?: string
+    cashback?: string
+    badge?: string
 }

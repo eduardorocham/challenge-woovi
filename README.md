@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Desafio de Frontend Engineer para Woovi
 
-## Getting Started
+Este repositório contém a solução para o desafio de Frontend Engineer da Woovi, que consiste na implementação de uma interface de usuário com base no design fornecido.
 
-First, run the development server:
+## Tecnologias Utilizadas
 
+- **Next.js**: Framework React com foco em renderização do lado do servidor e criação de aplicações web rápidas.
+- **Tailwind CSS**: Utilizado para estilização, seguindo uma abordagem de design utility-first.
+- **Material-UI**: Biblioteca de componentes React que implementa o Material Design para React.
+
+## Descrição do Projeto
+
+O desafio consiste na replicação de um design fornecido, conforme as seguintes especificações:
+
+- [ ] Implementação em React.
+- [ ] Abordagem Mobile First para garantir responsividade em todos os dispositivos.
+- [ ] Utilização de uma biblioteca de UI, preferencialmente Material-UI devido à integração com Woovi.
+- [ ] Consideração de todos os casos de borda para uma experiência de usuário consistente.
+
+## Estrutura do Repositório
+
+## Como Executar
+
+1. **Instalação**:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+    npm install
+   ```
+2. **Execução em Ambiente de Desenvolvimento**:
+```bash
+    npm run dev
+   ```
+Acesse http://localhost:3000 para visualizar a aplicação em ambiente de desenvolvimento.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Rotas do Projeto
+1. **Página Inicial (/)**:
+Página inicial da aplicação, exibindo as opções de pagamento para o cliente.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Página de Pagamento com QRCode (/entry-payment)**:
+Página de pagamento, exibindo um QRCode para o usuário realizar o pagamento do seu valor de entrada via pix.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Página de Formulário (/remaining-payment)**:
+Página de cadastro de dados do usuário, exibindo um formulário que coleta dados a respeito dos meios de pagamento do cliente.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contato e Dúvidas
+Dúvidas sobre o desafio podem ser esclarecidas através do canal no Discord da Woovi. Estou disponível para discussões adicionais via [Linkedin](https://www.linkedin.com/in/eduardo-rocha-dev-fullstack/).

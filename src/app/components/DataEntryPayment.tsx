@@ -1,22 +1,9 @@
-interface EntryProps {
-    text: string,
-    value: string
-}
+import VerticalStepper from "./Stepper"
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 
-const Entry = ({ text, value }: EntryProps) => {
+function DataEntryPayment() {
     return (
-        <div className="flex justify-between">
-            <div className="font-semibold text-secondary-gray text-lg">
-                {text}
-            </div>
-            <div className="font-bold text-secondary-gray text-lg">{value}</div>
-        </div>
-    )
-}
-
-const DataEntryPayment = () => {
-    return (
-        <div className="mt-5 w-full">
+        <div className="mt-5 w-full max-w-[25rem]">
             <div className="flex justify-center">
                 <div className="font-extrabold mb-5">
                     <span className="block text-primary-gray">
@@ -26,21 +13,28 @@ const DataEntryPayment = () => {
                 </div>
             </div>
             <div className="flex flex-col gap-4 pb-4 border-b border-primary-gray">
-                <Entry 
-                    text="1ª entrada no Pix" 
-                    value="R$ 15.300,00"
-                />
-                <Entry 
-                    text="2ª no cartão" 
-                    value="R$ 15.300,00"
+                <VerticalStepper 
+                    steps={
+                        [
+                            {
+                                label: '1ª entrada no Pix',
+                                description: 'R$ 15.300,00',
+                            },
+                            {
+                                label: '2ª no cartão',
+                                description: 'R$ 15.300,00',
+                            },
+                        ]
+                    } 
                 />
             </div>
             <div className="flex justify-between py-4 border-b border-primary-gray">
                 <div className="font-semibold text-secondary-gray text-lg">CET: 0,5%</div>
                 <div className="font-semibold text-secondary-gray text-lg">Total: R$ 30.600,00</div>
             </div>
-            <div className="py-4 border-b border-primary-gray">
+            <div className="py-4 border-b border-primary-gray flex justify-between items-center">
                 <div className="font-bold text-secondary-gray text-base">Como funciona?</div>
+                <ExpandLessIcon />
             </div>
             <div className="flex flex-col items-center py-4">
                 <span className="text-primary-gray">Identificador:</span>

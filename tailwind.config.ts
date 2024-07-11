@@ -12,9 +12,7 @@ const config: Config = {
         "small-space": "calc(100% - 16px)"
       },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "rectangle": "url('/images/Rectangle.png')"
       },
       colors: {
         "primary-greeen": "#03D69D",
@@ -24,7 +22,13 @@ const config: Config = {
       },
       borderColor: {
         "gray-border": "#E5E5E5"
-      }
+      },
+      screens: {
+        'sm': '449px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+      },
     },
   },
   plugins: [],

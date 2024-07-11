@@ -1,4 +1,5 @@
 import Image from "next/image";
+import FileCopyIcon from '@mui/icons-material/FileCopy';
 
 const QRCodeArea = () => {
     return (
@@ -12,7 +13,7 @@ const QRCodeArea = () => {
                 />
             </div>
             <button className="bg-primary-blue text-white px-4 py-1 rounded-lg text-lg">
-                Clique aqui para copiar QR CODE
+                Clique aqui para copiar QR CODE <FileCopyIcon />
             </button>
         </div>
     )
